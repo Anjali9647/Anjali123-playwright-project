@@ -11,7 +11,6 @@ await page.locator('#withOptGroup').click();
 //await option.waitFor({state:'visible'});
 //await page.getByText('Group 2, option 1').nth(1).click();
 //await expect(page.locator('div#withOptGroup')).toContainText('Group 2, option 1');
-this code for new branch
 })
 
 test('this is select Tag Dropdown',async({page})=>{
