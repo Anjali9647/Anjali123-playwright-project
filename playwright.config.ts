@@ -1,4 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
+<<<<<<< HEAD
+=======
+import { on } from 'events';
+>>>>>>> feature_AnotherLaptopData
 
 /**
  * Read environment variables from file.
@@ -18,7 +22,11 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
+<<<<<<< HEAD
   retries: process.env.CI ? 2 : 0,
+=======
+  retries: 1,
+>>>>>>> feature_AnotherLaptopData
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -29,6 +37,7 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+<<<<<<< HEAD
     trace: 'on-first-retry',
     screenshot:'on',
     browserName:'chromium',
@@ -72,6 +81,54 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
   //],
+=======
+    trace:'on',
+    browserName:'chromium',
+    screenshot:'on',
+    video:'on'
+  },
+
+  /* Configure projects for major browsers */
+  // projects: [
+  //    {
+  //      name: 'chromium',
+  //      use: { ...devices['Desktop Chrome'] ,
+  //       headless:false,
+  //      },
+       
+  //      },
+
+    //  {
+    //    name: 'firefox',
+    //    use: { ...devices['Desktop Firefox'] },
+    //  },
+
+    //  {
+    //    name: 'webkit',
+    //    use: { ...devices['Desktop Safari'] },
+    //  },
+
+    /* Test against mobile viewports. */
+    //  {
+    //    name: 'Mobile Chrome',
+    //    use: { ...devices['Pixel 5'] },
+    //  },
+    //  {
+    //    name: 'Mobile Safari',
+    //    use: { ...devices['iPhone 12'] },
+    //  },
+
+    // /* Test against branded browsers. */
+    //  {
+    //    name: 'Microsoft Edge',
+    //    use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    //  },
+    //  {
+    //    name: 'Google Chrome',
+    //    use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    //  },
+ // ],
+>>>>>>> feature_AnotherLaptopData
 
   /* Run your local dev server before starting the tests */
   // webServer: {
