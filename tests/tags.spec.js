@@ -17,7 +17,7 @@ test('Search for buses on RedBus homepage @smoke', async ({ page }) => {
   await page.click('button[type="submit"]');
   
   // Ensure the search results page loads
-  await expect(page).toHaveURL(/search/);
+  await expect.soft(page).toHaveURL(/search/);
   await expect(page.locator('.search-results')).toBeVisible();
 });
 
