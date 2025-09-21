@@ -12,7 +12,7 @@ await page.locator('#withOptGroup').click();
 //await page.getByText('Group 2, option 1').nth(1).click();
 //await expect(page.locator('div#withOptGroup')).toContainText('Group 2, option 1');
 })
-this example for ftech the changes
+
 test('this is select Tag Dropdown',async({page})=>{
 await page.goto("https://demoqa.com/select-menu");
 await page.locator('#oldSelectMenu').selectOption('Yellow');
